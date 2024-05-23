@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="..\css\calculator.css">
+    <script src="..\js\calculator.js"></script>
+</head>
+<body id="default">
+
+	<!-- Menú dropdown -->
+    <ul>
+		<div class="dropdown">
+			<li><a class="active" href="../index.html">Principal</a></li>
+		</div>
+		<div class="dropdown">
+			<li><a href="calculator.html">Calculadora</a></li>
+		</div>
+		<div class="dropdown">
+			<li><a href="form.html">Formulario</a></li>
+		</div>
+		</ul>
+
+		
+    <div id = "calc" class = title >
+		Calculadora Científica
+	</div>
+	
+	<form name = "calc">
+    
+		
+	<table id = "calc">
+
+		
+	<tr>
+		<td colspan=5><input id="entry" name="display"
+			onkeypress="return event.charCode >= 48
+			&& event.charCode <= 57" type="text">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input id="btnBlanco" class="pointer" type="button" value="1"
+				OnClick="calc.display.value+='1'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="2"
+				OnClick="calc.display.value+='2'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="3"
+				OnClick="calc.display.value+='3'">
+		</td>
+		
+		<td><input id="btnRojo" class="pointer" type="button" value="C"
+				OnClick="calc.display.value=''">
+		</td>
+		
+		<td><input id="btnAncho" class="pointer" type="button" value="="
+				OnClick="calculate(this.form)">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input id="btnBlanco" class="pointer" type="button" value="4"
+				OnClick="calc.display.value+='4'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="5"
+				OnClick="calc.display.value+='5'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="6"
+				OnClick="calc.display.value+='6'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="-"
+				OnClick="calc.display.value+='-'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="%"
+				OnClick="calc.display.value+='%'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="cos"
+				OnClick="calc.display.value='cos('">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input id="btnBlanco" class="pointer" type="button" value="7"
+				OnClick="calc.display.value+='7'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="8"
+				OnClick="calc.display.value+='8'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="9"
+				OnClick="calc.display.value+='9'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="*"
+				OnClick="calc.display.value+='*'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="n!"
+				OnClick="calc.display.value+='!'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="sin"
+				OnClick="calc.display.value='sin('">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input id="btn" class="pointer" type="button" value="."
+				OnClick="calc.display.value+='.'">
+		</td>
+		
+		<td><input id="btnBlanco" class="pointer" type="button" value="0"
+				OnClick="calc.display.value+='0'">
+		</td>
+		
+		<td><input id="btnRojo" class="pointer" type="button" value="<--"
+			OnClick="backspace(this.form)">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="+"
+				OnClick="calc.display.value+='+'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="/"
+				OnClick="calc.display.value+='/'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="tan"
+				OnClick="calc.display.value='tan('">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input id="btn" class="pointer" type="button" value="E"
+				OnClick="calc.display.value+='E'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="π"
+				OnClick="calc.display.value+='π'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="^"
+				OnClick="calc.display.value+='^'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="("
+				OnClick="calc.display.value+='('">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value=")"
+				OnClick="calc.display.value+=')'">
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="log"
+				OnClick="calc.display.value='log('">
+		</td>
+	</tr>
+	
+	<tr>
+		<td><input id="btn" class="pointer" type="button" value="√"
+				OnClick="calc.display.value+='√'">
+		</td>
+		
+		<td>
+		</td>
+		
+		<td>
+		</td>
+		
+		<td>
+		</td>
+		
+		<td>
+		</td>
+		
+		<td><input id="btn" class="pointer" type="button" value="exp"
+				OnClick="calc.display.value='exp('">
+		</td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>
